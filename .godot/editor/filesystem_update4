@@ -1,0 +1,5 @@
+res://scenes/Main.tscn
+res://scenes/Player.tscn
+res://scenes/wall.tscn
+res://scripts/no_flip_zone.gd
+res://scripts/camera_rig.gd
