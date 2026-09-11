@@ -17,7 +17,7 @@ was hidden behind the wall becomes walkable. That reveal is the whole
 trick: it's real 3D geometry that was simply out of view.
 
 Walk left onto the platform near the start and you'll enter a
-`NoFlipZone` — flipping is temporarily disabled there, just like SPM's
+`NoFlipZone` — flipping is temporarily disabled there.
 dark rooms.
 
 ## Project structure
