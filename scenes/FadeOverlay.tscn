@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bhs2a6fk4yu4"]
+
+[ext_resource type="Script" uid="uid://ygx48xkt5vrq" path="res://scripts/fade_overlay.gd" id="1_ns6wc"]
+
+[node name="FadeOverlay" type="CanvasLayer" unique_id=33091478]
+layer = 100
+script = ExtResource("1_ns6wc")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1600651137]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 0)

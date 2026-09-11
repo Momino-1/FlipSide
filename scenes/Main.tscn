@@ -3,12 +3,14 @@
 [ext_resource type="PackedScene" uid="uid://b6sm43heqwxwj" path="res://scenes/Player.tscn" id="1"]
 [ext_resource type="Script" uid="uid://bxhdy8gfujbck" path="res://scripts/camera_rig.gd" id="2"]
 [ext_resource type="Script" uid="uid://l550sxk32xr5" path="res://scripts/no_flip_zone.gd" id="3"]
+[ext_resource type="Script" uid="uid://i526rstcioig" path="res://scripts/kill_zone.gd" id="4_rarhs"]
+[ext_resource type="PackedScene" uid="uid://bhs2a6fk4yu4" path="res://scenes/FadeOverlay.tscn" id="5_vcsgt"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0bbpv"]
-sky_top_color = Color(0.7973144, 0.7440229, 0.7478017, 1)
-sky_horizon_color = Color(1.2169077, 1.2129879, 1.2209907, 1)
-ground_bottom_color = Color(0.33379012, 0.3714026, 0.39963418, 1)
-ground_horizon_color = Color(1.2169077, 1.2129879, 1.2209907, 1)
+sky_top_color = Color(0.33333334, 0.37254903, 0.4, 1)
+sky_horizon_color = Color(0.7491466, 0.75774956, 0.79131925, 1)
+ground_bottom_color = Color(0.32993984, 0.32513604, 0.43196368, 1)
+ground_horizon_color = Color(0.7491466, 0.75774956, 0.79131925, 1)
 energy_multiplier = 1.35
 
 [sub_resource type="Sky" id="Sky_rarhs"]
@@ -39,9 +41,22 @@ albedo_color = Color(0.26666668, 0.25490198, 0.2509804, 1)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wj5aj"]
 albedo_color = Color(0.26147652, 0.26147655, 0.26147652, 1)
 
+[sub_resource type="StandardMaterial3D" id="2"]
+albedo_color = Color(0.85, 0.1, 0.1, 1)
+emission_enabled = true
+emission = Color(0.6, 0.05, 0.05, 1)
+emission_energy_multiplier = 0.6
+
+[sub_resource type="BoxMesh" id="BoxMesh_vcsgt"]
+material = SubResource("2")
+size = Vector3(1.4, 1.4, 1.4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c01mt"]
+size = Vector3(1.4, 1.4, 1.4)
+
 [node name="Main" type="Node3D" unique_id=1200994163]
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1899369835]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=17628539]
 environment = SubResource("Environment_vcsgt")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1986723148]
@@ -49,13 +64,19 @@ transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545
 shadow_enabled = true
 
 [node name="Ground" type="CSGBox3D" parent="." unique_id=18452530 groups=["solid"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.310242, -0.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.281158, -0.5, 0)
 use_collision = true
-size = Vector3(84.62048, 1, 12)
+size = Vector3(60.562317, 1, 12)
+material = SubResource("StandardMaterial3D_nxtc6")
+
+[node name="Ground" type="CSGBox3D" parent="Ground" unique_id=544077300 groups=["solid"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.845234, -0.5, 15.116547)
+use_collision = true
+size = Vector3(6.942604, 1, 18.62262)
 material = SubResource("StandardMaterial3D_nxtc6")
 
 [node name="HiddenCorridorFloor" type="CSGBox3D" parent="." unique_id=5549356 groups=["solid"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.896912, -0.5, 7.448683)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.896912, -0.5, -7.413108)
 use_collision = true
 size = Vector3(5.984253, 1, 3.0291748)
 material = SubResource("StandardMaterial3D_jlsqs")
@@ -82,52 +103,76 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 1, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.7528353, 0.783504, -7.402676)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="wall" unique_id=147306058]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.70626354, 0.9091556, 12.245508)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.70626354, 0.9091556, 1.9857287)
 use_collision = true
-size = Vector3(0.33203125, 3.3745117, 8.332489)
+size = Vector3(0.33203125, 3.3745117, 7.3757854)
 material = SubResource("StandardMaterial3D_rarhs")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="wall" unique_id=1789930536]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.686447, 0.9002683, 12.536877)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.0847445, 0.9002683, 1.9410815)
 use_collision = true
-size = Vector3(0.4432373, 3.3745117, 7.588806)
+size = Vector3(0.32659912, 3.3745117, 7.178177)
 material = SubResource("StandardMaterial3D_c01mt")
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="wall" unique_id=340065927]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1262512, 0.91788054, 7.2476845)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1262512, 0.91788054, 9.403758)
 use_collision = true
-size = Vector3(0.36645508, 3.406067, 11.189995)
+size = Vector3(0.36645508, 3.406067, 8.386366)
 material = SubResource("StandardMaterial3D_vcsgt")
 
 [node name="platforms" type="Node3D" parent="." unique_id=1930360331 groups=["solid"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.7528353, 0.783504, -8.555442)
 
-[node name="Platform7" type="CSGBox3D" parent="platforms" unique_id=440291778]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.995392, 0.65298986, 0.6640096)
+[node name="Platform7" type="CSGBox3D" parent="platforms" unique_id=440291778 groups=["solid"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.548931, 0.6106522, 0.6640096)
 use_collision = true
 size = Vector3(2.1263428, 0.35876465, 1.2052612)
 material = SubResource("StandardMaterial3D_wj5aj")
 
-[node name="Platform1" type="CSGBox3D" parent="platforms" unique_id=185474295]
+[node name="Platform1" type="CSGBox3D" parent="platforms" unique_id=185474295 groups=["solid"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.752835, 0.21649599, 8.555442)
 use_collision = true
 size = Vector3(3, 0.5, 3)
 material = SubResource("StandardMaterial3D_wj5aj")
 
-[node name="Platform2" type="CSGBox3D" parent="platforms" unique_id=84570435]
+[node name="Platform2" type="CSGBox3D" parent="platforms" unique_id=84570435 groups=["solid"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.109734, -1.6021999, 3.8619723)
 use_collision = true
 size = Vector3(2.1263428, 0.35876465, 1.2052612)
 material = SubResource("StandardMaterial3D_wj5aj")
 
-[node name="Platform6" type="CSGBox3D" parent="platforms" unique_id=1936715605]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.496452, 0.65298986, 0.6505437)
+[node name="Platform6" type="CSGBox3D" parent="platforms" unique_id=1936715605 groups=["solid"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.496452, -0.030372143, 0.67981195)
 use_collision = true
 size = Vector3(2.1263428, 0.35876465, 1.2052612)
 material = SubResource("StandardMaterial3D_wj5aj")
 
-[node name="Platform8" type="CSGBox3D" parent="platforms" unique_id=463118655]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.559269, 0.65298986, 0.6640096)
+[node name="Platform8" type="CSGBox3D" parent="platforms" unique_id=463118655 groups=["solid"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.426132, 1.352957, 0.6640096)
 use_collision = true
 size = Vector3(2.1263428, 0.35876465, 1.2052612)
 material = SubResource("StandardMaterial3D_wj5aj")
+
+[node name="Platform7" type="CSGBox3D" parent="." unique_id=1369124945 groups=["solid"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.18236, 2.6810784, -0.70053315)
+use_collision = true
+size = Vector3(2.1263428, 0.35876465, 1.2052612)
+material = SubResource("StandardMaterial3D_wj5aj")
+
+[node name="Platform8" type="CSGBox3D" parent="." unique_id=879797661 groups=["solid"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.193485, 2.6347065, -4.1548233)
+use_collision = true
+size = Vector3(2.1263428, 0.35876465, 1.2052612)
+material = SubResource("StandardMaterial3D_wj5aj")
+
+[node name="KillBlock" type="Area3D" parent="." unique_id=762162972]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.7, 0)
+script = ExtResource("4_rarhs")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="KillBlock" unique_id=1403399]
+mesh = SubResource("BoxMesh_vcsgt")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="KillBlock" unique_id=468868385]
+shape = SubResource("BoxShape3D_c01mt")
+
+[node name="FadeOverlay" parent="." unique_id=33091478 instance=ExtResource("5_vcsgt")]

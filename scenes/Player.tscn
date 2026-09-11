@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b6sm43heqwxwj"]
 
 [ext_resource type="Script" uid="uid://dht1uahu1sssy" path="res://scripts/player.gd" id="1"]
-[ext_resource type="Texture2D" uid="uid://bb3ur23ybtdfb" path="res://imagewew.png" id="2_v6fml"]
+[ext_resource type="Texture2D" uid="uid://bb3ur23ybtdfb" path="res://assets/imagewew.png" id="2_v6fml"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_c01mt"]
 size = Vector3(0.47906494, 0.95751953, 0.61724854)

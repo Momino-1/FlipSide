@@ -3,3 +3,8 @@ res://scenes/Player.tscn
 res://scenes/wall.tscn
 res://scripts/no_flip_zone.gd
 res://scripts/camera_rig.gd
+res://MainMenu.tscn
+res://FadeOverlay.tscn
+res://scripts/kill_zone.gd
+res://scripts/player.gd
+res://fade_overlay.gd

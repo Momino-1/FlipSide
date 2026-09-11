@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dusw1t3ejox6k"
-path.s3tc="res://.godot/imported/assetring.png-13f05375aa62b58c7f366fb8bc85bde0.s3tc.ctex"
+uid="uid://djoavs02jusd0"
+path.s3tc="res://.godot/imported/rw.png-a3c442b0288d09eda18eecf8cd63ed0c.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assetring.png"
-dest_files=["res://.godot/imported/assetring.png-13f05375aa62b58c7f366fb8bc85bde0.s3tc.ctex"]
+source_file="res://assets/rw.png"
+dest_files=["res://.godot/imported/rw.png-a3c442b0288d09eda18eecf8cd63ed0c.s3tc.ctex"]
 
 [params]
 

@@ -21,16 +21,21 @@ enum Mode { TWO_D, THREE_D }
 
 var mode: Mode = Mode.TWO_D
 var can_flip: bool = true
+var spawn_position: Vector3
 
 var _is_flipping: bool = false
+var _is_dead: bool = false
 var _prev_jump_key: bool = false
 var _prev_flip_key: bool = false
 
 @onready var sprite: Sprite3D = $Sprite3D
 @onready var camera_rig: Node3D = get_tree().get_first_node_in_group("camera_rig")
+@onready var fade_overlay: CanvasLayer = get_tree().get_first_node_in_group("fade_overlay")
 
 
 func _ready() -> void:
+	spawn_position = global_position
+
 	# Give the sprite a visible placeholder if no texture has been assigned.
 	# Swap this out in the editor for your own spritesheet/AnimatedSprite3D.
 	if sprite.texture == null:
@@ -41,6 +46,9 @@ func _ready() -> void:
 
 
 func _physics_process(delta: float) -> void:
+	if _is_dead:
+		return
+
 	if not is_on_floor():
 		velocity.y -= gravity * delta
 	elif velocity.y < 0.0:
@@ -109,6 +117,35 @@ func flip_mode() -> void:
 ## just like the dark rooms in Super Paper Mario.
 func set_can_flip(value: bool) -> void:
 	can_flip = value
+
+
+## Called by KillZone/kill blocks (see kill_zone.gd). Freezes the player,
+## flashes the screen white, teleports back to spawn, then fades back in.
+func die() -> void:
+	if _is_dead:
+		return
+	_is_dead = true
+	velocity = Vector3.ZERO
+
+	if fade_overlay and fade_overlay.has_method("flash_to_white"):
+		await fade_overlay.flash_to_white()
+	else:
+		await get_tree().create_timer(0.2).timeout
+
+	_respawn()
+
+	if fade_overlay and fade_overlay.has_method("clear_to_visible"):
+		await fade_overlay.clear_to_visible()
+
+	_is_dead = false
+
+
+func _respawn() -> void:
+	global_position = spawn_position
+	velocity = Vector3.ZERO
+	mode = Mode.TWO_D
+	if camera_rig and camera_rig.has_method("flip_to"):
+		camera_rig.flip_to(0)
 
 
 func _make_placeholder_texture() -> ImageTexture:
