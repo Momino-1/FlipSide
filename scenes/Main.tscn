@@ -153,26 +153,28 @@ use_collision = true
 size = Vector3(2.1263428, 0.35876465, 1.2052612)
 material = SubResource("StandardMaterial3D_wj5aj")
 
-[node name="Platform7" type="CSGBox3D" parent="." unique_id=1369124945 groups=["solid"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.18236, 2.6810784, -0.70053315)
+[node name="Platform9" type="CSGBox3D" parent="platforms" unique_id=1369124945 groups=["solid"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.429527, 1.8975744, 7.854909)
 use_collision = true
 size = Vector3(2.1263428, 0.35876465, 1.2052612)
 material = SubResource("StandardMaterial3D_wj5aj")
 
-[node name="Platform8" type="CSGBox3D" parent="." unique_id=879797661 groups=["solid"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.193485, 2.6347065, -4.1548233)
+[node name="Platform10" type="CSGBox3D" parent="platforms" unique_id=879797661 groups=["solid"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.44065, 1.8512025, 4.4006186)
 use_collision = true
 size = Vector3(2.1263428, 0.35876465, 1.2052612)
 material = SubResource("StandardMaterial3D_wj5aj")
-
-[node name="KillBlock" type="Area3D" parent="." unique_id=762162972]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.7, 0)
-script = ExtResource("4_rarhs")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="KillBlock" unique_id=1403399]
-mesh = SubResource("BoxMesh_vcsgt")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="KillBlock" unique_id=468868385]
-shape = SubResource("BoxShape3D_c01mt")
 
 [node name="FadeOverlay" parent="." unique_id=33091478 instance=ExtResource("5_vcsgt")]
+
+[node name="killblocks" type="Node3D" parent="." unique_id=189011440]
+
+[node name="KillBlock" type="Area3D" parent="killblocks" unique_id=762162972]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -2.7210205, 0)
+script = ExtResource("4_rarhs")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="killblocks/KillBlock" unique_id=1403399]
+mesh = SubResource("BoxMesh_vcsgt")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="killblocks/KillBlock" unique_id=468868385]
+shape = SubResource("BoxShape3D_c01mt")
