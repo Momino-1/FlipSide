@@ -1,13 +1,3 @@
-# SPM-Style Dimension Flip — Foundation
-
-A minimal Godot 4 project demonstrating the Super Paper Mario "flip
-between 2D and 3D" mechanic. One real 3D level, viewed and controlled
-differently depending on mode — no separate 2D/3D game logic needed.
-
-## How to run it
-1. Open Godot 4.3+ (Forward+ renderer).
-2. "Import" this folder as a project (select the `project.godot` file).
-3. Press F5 (or the Play button). `scenes/Main.tscn` is the main scene.
 
 ## Controls
 - **A/D or Left/Right** — move
@@ -59,12 +49,3 @@ scripts/
 - **Level design does the storytelling.** The hidden corridor in
   `Main.tscn` is just geometry placed behind the wall on the Z axis —
   nothing fancy, but it's the actual source of the "whoa" moment.
-
-## Good next steps
-- Replace the placeholder pink rectangle with a real `AnimatedSprite3D`
-  spritesheet (walk/idle/jump frames), still billboarded.
-- Add a short screen-space flash or shader wipe during the flip so
-  geometry pop-in feels intentional rather than jarring.
-- Add coyote-time/jump buffering to the jump logic for tighter platforming feel.
-- Build out more no-flip "dark rooms" and flip-only secrets as level
-  design tools, exactly like the original game.
