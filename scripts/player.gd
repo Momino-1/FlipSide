@@ -14,13 +14,15 @@ extends CharacterBody3D
 
 enum Mode { TWO_D, THREE_D }
 
-@export var speed: float = 6.0
+@export var speed: float = 7.1
 @export var jump_velocity: float = 9.0
 @export var gravity: float = 26.0
 @export var flip_duration: float = 0.45
+@export var shift_speed: float = 10
 
 var mode: Mode = Mode.TWO_D
 var can_flip: bool = true
+var can_jump: bool = true
 var spawn_position: Vector3
 
 var _is_flipping: bool = false
@@ -78,52 +80,67 @@ func _handle_movement() -> void:
 
 func _get_input_axis() -> float:
 	# Plain key polling so this works with zero Input Map setup.
-	# Replace with Input.get_axis("move_left","move_right") once you've
-	# defined those actions in Project Settings > Input Map.
 	var dir: float = 0.0
+
 	if Input.is_physical_key_pressed(KEY_A) or Input.is_physical_key_pressed(KEY_LEFT):
 		dir -= 1.0
+
 	if Input.is_physical_key_pressed(KEY_D) or Input.is_physical_key_pressed(KEY_RIGHT):
 		dir += 1.0
+
 	return dir
 
 
 func _handle_jump() -> void:
 	var jump_key: bool = Input.is_physical_key_pressed(KEY_SPACE)
-	if jump_key and not _prev_jump_key and is_on_floor():
+
+	# Jump only if jumping is allowed.
+	if jump_key and not _prev_jump_key and is_on_floor() and can_jump:
 		velocity.y = jump_velocity
+
 	_prev_jump_key = jump_key
 
 
 func _handle_flip_input() -> void:
 	var flip_key: bool = Input.is_physical_key_pressed(KEY_F)
+
 	if flip_key and not _prev_flip_key:
 		flip_mode()
+
 	_prev_flip_key = flip_key
 
 
 func flip_mode() -> void:
 	if _is_flipping or not can_flip:
 		return
+
 	_is_flipping = true
 	mode = Mode.THREE_D if mode == Mode.TWO_D else Mode.TWO_D
+
 	if camera_rig and camera_rig.has_method("flip_to"):
 		camera_rig.flip_to(mode)
+
 	await get_tree().create_timer(flip_duration).timeout
 	_is_flipping = false
 
 
-## Called by NoFlipZone areas (see no_flip_zone.gd) to lock/unlock flipping,
-## just like the dark rooms in Super Paper Mario.
+## Called by NoFlipZone areas to lock/unlock flipping.
 func set_can_flip(value: bool) -> void:
 	can_flip = value
 
 
-## Called by KillZone/kill blocks (see kill_zone.gd). Freezes the player,
-## flashes the screen white, teleports back to spawn, then fades back in.
+## Called by NoJumpZone areas to lock/unlock jumping.
+func set_can_jump(value: bool) -> void:
+	can_jump = value
+
+
+## Called by KillZone/kill blocks.
+## Freezes the player, flashes the screen white,
+## teleports back to spawn, then fades back in.
 func die() -> void:
 	if _is_dead:
 		return
+
 	_is_dead = true
 	velocity = Vector3.ZERO
 
@@ -144,6 +161,7 @@ func _respawn() -> void:
 	global_position = spawn_position
 	velocity = Vector3.ZERO
 	mode = Mode.TWO_D
+
 	if camera_rig and camera_rig.has_method("flip_to"):
 		camera_rig.flip_to(0)
 

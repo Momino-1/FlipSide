@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bb3ur23ybtdfb" path="res://assets/imagewew.png" id="2_v6fml"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_c01mt"]
-size = Vector3(0.47906494, 0.95751953, 0.61724854)
+size = Vector3(0.47906494, 0.95751953, 0.40542603)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_g7fx0"]
 
@@ -15,22 +15,23 @@ albedo_texture = ExtResource("2_v6fml")
 script = ExtResource("1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2006794901]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04574585, 1.0155761, 0.039154053)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04574585, 1.2966256, -0.0667572)
 shape = SubResource("BoxShape3D_c01mt")
 
 [node name="Sprite3D" type="Sprite3D" parent="." unique_id=1987692063]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1810495, 0)
 pixel_size = 0.02
 billboard = 1
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=618706554]
-transform = Transform3D(0.39943808, 0, 0, 0, -4.371139e-08, -0.7780175, 0, 1, -3.4008227e-08, 0, 0.78799164, 0.24734545)
+transform = Transform3D(0.39943808, 0, 0, 0, -4.371139e-08, -0.7780175, 0, 1, -3.4008227e-08, 0, 1.0690411, 0.24734545)
 visible = false
 mesh = SubResource("PlaneMesh_g7fx0")
 surface_material_override/0 = SubResource("StandardMaterial3D_p0vlq")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="MeshInstance3D" unique_id=108640208]
 transform = Transform3D(-0.0036239983, 2.5035005, -8.513961e-08, -0.39943546, -0.0036239983, 3.413147e-08, 2.2441498e-08, 5.638665e-08, 1, 0.8975963, -0.42276925, 0)
+visible = false
 mesh = SubResource("PlaneMesh_g7fx0")
 skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_p0vlq")

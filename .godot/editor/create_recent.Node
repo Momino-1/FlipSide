@@ -1,5 +1,7 @@
 Node3D
+StaticBody3D
+RigidBody3D
+TextureRect
 CSGBox3D
 Area3D
 MeshInstance3D
-StaticBody3D

@@ -1,0 +1,115 @@
+[gd_scene format=3 uid="uid://rouhea8s3nky"]
+
+[ext_resource type="Script" uid="uid://dja6jblqal1v" path="res://objects/brigdey/glass_bridge.gd" id="1_3ndju"]
+[ext_resource type="Script" uid="uid://i526rstcioig" path="res://scripts/kill_zone.gd" id="2"]
+[ext_resource type="PackedScene" uid="uid://bvcls8en2ysva" path="res://scenes/GlassPanel.tscn" id="4_3ndju"]
+[ext_resource type="PackedScene" uid="uid://bhs2a6fk4yu4" path="res://scenes/FadeOverlay.tscn" id="5"]
+[ext_resource type="Script" uid="uid://b66nln7te7gjq" path="res://objects/brigdey/no_jump.gd" id="5_d2eqv"]
+
+[sub_resource type="BoxShape3D" id="2"]
+size = Vector3(4, 3, 3)
+
+[sub_resource type="BoxShape3D" id="1"]
+size = Vector3(6, 6, 16.252533)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_viql0"]
+size = Vector3(4.859375, 2.449463, 20.08285)
+
+[node name="GlassBridge" type="Node3D" unique_id=362071263]
+script = ExtResource("1_3ndju")
+
+[node name="StartPlatform" type="CSGBox3D" parent="." unique_id=1439368259 groups=["solid"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04118347, -0.2, 20.74242)
+use_collision = true
+size = Vector3(4.897949, 0.4, 4)
+
+[node name="Area3D" type="Area3D" parent="StartPlatform" unique_id=1751894470]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.04118347, 1.3010743, -1.615879)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StartPlatform/Area3D" unique_id=1127155419]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.1341734)
+shape = SubResource("2")
+
+[node name="Label3D" type="Label3D" parent="StartPlatform/Area3D" unique_id=63228181]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 1.5201149)
+billboard = 1
+text = "No jumping here!"
+font_size = 48
+outline_size = 8
+
+[node name="EndPlatform" type="CSGBox3D" parent="." unique_id=913878949 groups=["solid"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.036224365, -0.2, 2.1341734)
+use_collision = true
+size = Vector3(4.8320923, 0.4, 4)
+
+[node name="Chasm" type="Area3D" parent="." unique_id=17923705]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4, 8.890679)
+script = ExtResource("2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Chasm" unique_id=1027198214]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.8262644)
+shape = SubResource("1")
+
+[node name="FinishZone" type="Area3D" parent="." unique_id=1968057964]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FinishZone" unique_id=218066977]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.1341734)
+shape = SubResource("2")
+
+[node name="Label3D" type="Label3D" parent="FinishZone" unique_id=932367331]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 2.1341734)
+billboard = 1
+text = "You crossed!"
+font_size = 48
+outline_size = 8
+
+[node name="FadeOverlay" parent="." unique_id=195428692 instance=ExtResource("5")]
+
+[node name="GlassPanel" parent="." unique_id=1674961415 instance=ExtResource("4_3ndju")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3005099, -3.1411648e-05, 17.441221)
+
+[node name="GlassPanel2" parent="." unique_id=1598944503 instance=ExtResource("4_3ndju")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3035836, -3.1411648e-05, 17.441221)
+
+[node name="GlassPanel3" parent="." unique_id=1379952924 instance=ExtResource("4_3ndju")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3005099, -3.1411648e-05, 13.33627)
+
+[node name="GlassPanel4" parent="." unique_id=436792041 instance=ExtResource("4_3ndju")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3035836, -3.1411648e-05, 13.33627)
+
+[node name="GlassPanel5" parent="." unique_id=2059211459 instance=ExtResource("4_3ndju")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3005099, -3.1411648e-05, 9.360669)
+
+[node name="GlassPanel6" parent="." unique_id=1523606093 instance=ExtResource("4_3ndju")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3035836, -3.1411648e-05, 9.360669)
+
+[node name="GlassPanel7" parent="." unique_id=31361001 instance=ExtResource("4_3ndju")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3005099, -3.1411648e-05, 5.3413405)
+
+[node name="GlassPanel8" parent="." unique_id=1554647126 instance=ExtResource("4_3ndju")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3035836, -3.1411648e-05, 5.3413405)
+
+[node name="StartPlatform2" type="CSGBox3D" parent="." unique_id=1666827699 groups=["solid"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04118347, -0.2, 15.342476)
+use_collision = true
+size = Vector3(4.897949, 0.4, 1.6177368)
+
+[node name="StartPlatform3" type="CSGBox3D" parent="." unique_id=1124121275 groups=["solid"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04118347, -0.2, 11.415691)
+use_collision = true
+size = Vector3(4.897949, 0.4, 1.6177368)
+
+[node name="StartPlatform4" type="CSGBox3D" parent="." unique_id=2002136310 groups=["solid"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04118347, -0.2, 7.310508)
+use_collision = true
+size = Vector3(4.897949, 0.4, 1.6177368)
+
+[node name="NoJump" type="Area3D" parent="." unique_id=1933044429]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.34690762, 0, 19.170332)
+script = ExtResource("5_d2eqv")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NoJump" unique_id=1144998987]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.38085938, 0.9202881, -6.71626)
+shape = SubResource("BoxShape3D_viql0")
+debug_color = Color(0, 0.6, 0.69803923, 1)

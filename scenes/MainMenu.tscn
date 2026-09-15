@@ -1,12 +1,15 @@
 [gd_scene format=3 uid="uid://bvhmrmjhkcttp"]
 
 [ext_resource type="Script" uid="uid://vhn5dh3q4647" path="res://scripts/main_menu.gd" id="1_i26rj"]
+[ext_resource type="Texture2D" uid="uid://bb3ur23ybtdfb" path="res://assets/imagewew.png" id="2_0ykhv"]
 
 [node name="MainMenu" type="Control" unique_id=1220201078]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_i26rj")
 
 [node name="Background" type="ColorRect" parent="." unique_id=478049024]
@@ -14,10 +17,17 @@ layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
-color = Color(0.09, 0.1, 0.14, 1)
+color = Color(0.67402977, 0.2905589, 0.21965137, 1)
+
+[node name="TextureRect" type="TextureRect" parent="Background" unique_id=2048445214]
+layout_mode = 0
+offset_right = 1149.0
+offset_bottom = 647.0
+texture = ExtResource("2_0ykhv")
 
 [node name="CenterContainer" type="CenterContainer" parent="." unique_id=315669453]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 

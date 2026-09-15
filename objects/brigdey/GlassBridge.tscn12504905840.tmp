@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://rouhea8s3nky"]
+
+[ext_resource type="Script" uid="uid://dja6jblqal1v" path="res://objects/brigdey/glass_bridge.gd" id="1_3ndju"]
+[ext_resource type="Script" uid="uid://i526rstcioig" path="res://scripts/kill_zone.gd" id="2"]
+[ext_resource type="PackedScene" uid="uid://bvcls8en2ysva" path="res://objects/brigdey/GlassPanel.tscn" id="4_d2eqv"]
+[ext_resource type="PackedScene" uid="uid://bhs2a6fk4yu4" path="res://scenes/FadeOverlay.tscn" id="5"]
+
+[sub_resource type="BoxShape3D" id="1"]
+size = Vector3(6, 6, 4)
+
+[sub_resource type="BoxShape3D" id="2"]
+size = Vector3(4, 3, 3)
+
+[node name="GlassBridge" type="Node3D" unique_id=362071263]
+script = ExtResource("1_3ndju")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=205003935]
+transform = Transform3D(0.8660254, 0.35355338, -0.35355338, 0, 0.70710677, 0.70710677, 0.5, -0.6123724, 0.6123724, 0, 0, 0)
+shadow_enabled = true
+
+[node name="StartPlatform" type="CSGBox3D" parent="." unique_id=1439368259]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.2, 17.034803)
+use_collision = true
+size = Vector3(4, 0.4, 4)
+
+[node name="EndPlatform" type="CSGBox3D" parent="." unique_id=913878949]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.2, 0)
+use_collision = true
+size = Vector3(4, 0.4, 4)
+
+[node name="Chasm" type="Area3D" parent="." unique_id=17923705]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4, 0)
+script = ExtResource("2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Chasm" unique_id=1027198214]
+shape = SubResource("1")
+
+[node name="FinishZone" type="Area3D" parent="." unique_id=1968057964]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FinishZone" unique_id=218066977]
+shape = SubResource("2")
+
+[node name="Label3D" type="Label3D" parent="FinishZone" unique_id=932367331]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 0)
+billboard = 1
+text = "You crossed!"
+font_size = 48
+outline_size = 8
+
+[node name="FadeOverlay" parent="." unique_id=195428692 instance=ExtResource("5")]
+
+[node name="GlassPanel" parent="." unique_id=1508306078 instance=ExtResource("4_d2eqv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.24993515, 0, 4.5401864)
+script = null
