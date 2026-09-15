@@ -1,3 +1,6 @@
+AudioStreamPlayer3D
+AudioListener3D
+Label
 Node3D
 StaticBody3D
 RigidBody3D

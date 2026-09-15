@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://jd8ms4vqr80v"]
 
-[ext_resource type="Script" uid="uid://bien7klkmgw2d" path="res://objects/brigdey/glass_panel.gd" id="1_6kkso"]
+[ext_resource type="Script" uid="uid://ykso36wuosos" path="res://scenes/longglass.gd" id="1_6kkso"]
 
 [sub_resource type="StandardMaterial3D" id="1"]
 depth_draw_mode = 1
@@ -17,6 +17,7 @@ size = Vector3(1.9032348, 0.2, 5.183606)
 
 [node name="longglass" type="Node3D" unique_id=415187438]
 script = ExtResource("1_6kkso")
+max_time = 2.0
 
 [node name="Mesh" type="MeshInstance3D" parent="." unique_id=1908631433]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.54244995, -0.2248069, -0.6266136)

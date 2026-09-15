@@ -1,5 +1,6 @@
 res://scenes/Main.tscn
-res://scenes/longglass.tscn
 res://objects/brigdey/glass_panel.gd
-res://objects/brigdey/GlassBridge.tscn
-res://scripts/camera_rig.gd
+res://scenes/longglass.tscn
+res://scenes/longglass.gd
+res://scenes/Player.tscn
+res://scripts/player.gd

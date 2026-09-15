@@ -1,0 +1,12 @@
+res://assets/longglass.tscn::cd55fcdf9e3d245a4e6102c353878fa3::1789398693::res://.godot/exported/133200997/export-e2253d1028a3e85ad52a9787e3759294-longglass.scn
+res://objects/brigdey/GlassBridge.tscn::3f24ac4462110a9cf1a150046e9992d7::1789465247::res://.godot/exported/133200997/export-b13c3ab73d4bab547e884c37998251c0-GlassBridge.scn
+res://objects/killblock.tscn::05e1fb5b4b828b157d539b6ebc586c58::1789117795::res://.godot/exported/133200997/export-3542d49de82e90c96a4d7d0146d72eca-killblock.scn
+res://objects/no_flip_zone.tscn::460de1b9511be38a05e95ad824e38f90::1789128142::res://.godot/exported/133200997/export-2755e375e9eba8cb077c57059bb794c9-no_flip_zone.scn
+res://objects/platform.tscn::23c2c09cac154c1f018039c02510e0f3::1789117830::res://.godot/exported/133200997/export-ec4b609243bec5305e015680eaee199e-platform.scn
+res://scenes/FadeOverlay.tscn::54bf61896e3d2cf2bd258691d57f6f80::1789113735::res://.godot/exported/133200997/export-7a92f5cc41e1aa4e239f84bc4eb0b1e1-FadeOverlay.scn
+res://scenes/GlassPanel.tscn::21073e15e0bce91a52c6b7a198a6c01d::1789398603::res://.godot/exported/133200997/export-eb6fbea9add6af38d332658ffa3b8322-GlassPanel.scn
+res://scenes/longglass.tscn::183044a6b22f89afa9f79eb7256c0c35::1789465222::res://.godot/exported/133200997/export-b11c4eab074d97e1e19fc621525a79ce-longglass.scn
+res://scenes/Main.tscn::b28641b75f91df6c3c70bebbc1c357cf::1789471717::res://.godot/exported/133200997/export-4a24720ee5e787dbe30abc634fa3679d-Main.scn
+res://scenes/MainMenu.tscn::869a807afedd9344c413d17bcb1fa123::1789115481::res://.godot/exported/133200997/export-23c8b2a48d59a0cd018bd8ad5ce7794c-MainMenu.scn
+res://scenes/Player.tscn::6c2763f69c71c02c3b3d96b1a8099bb7::1789470575::res://.godot/exported/133200997/export-e8220e74d1354b9e6b168b513689419c-Player.scn
+res://scenes/wall.tscn::3ea0e689710443007f588de7e771abbb::1789041308::res://.godot/exported/133200997/export-07690686bd1a72f71ae2b53bb79af276-wall.scn
