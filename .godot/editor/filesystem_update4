@@ -1,6 +1,13 @@
 res://scenes/Main.tscn
-res://objects/brigdey/glass_panel.gd
-res://scenes/longglass.tscn
-res://scenes/longglass.gd
+res://objects/brigdey/GlassBridge.tscn
+res://scenes/MovingBlock.gd
+res://assets/moving_block.tscn
+res://assets/moving_block.gd
+res://assets/movingBlock.tscn
 res://scenes/Player.tscn
 res://scripts/player.gd
+res://assets/movingBlock.gd
+res://scenes/moving_block.gd
+res://objects/moving_block.tscn
+res://scenes/moving_block_up.tscn
+res://scenes/moving_block_Z.tscn

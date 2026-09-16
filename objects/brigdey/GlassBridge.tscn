@@ -71,21 +71,25 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3005099, -3.1411648e-05, 17
 
 [node name="GlassPanel2" parent="." unique_id=1598944503 instance=ExtResource("4_3ndju")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3035836, -3.1411648e-05, 17.441221)
+is_safe = false
 
 [node name="GlassPanel3" parent="." unique_id=1379952924 instance=ExtResource("4_3ndju")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3005099, -3.1411648e-05, 13.33627)
 
 [node name="GlassPanel4" parent="." unique_id=436792041 instance=ExtResource("4_3ndju")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3035836, -3.1411648e-05, 13.33627)
+is_safe = false
 
 [node name="GlassPanel5" parent="." unique_id=2059211459 instance=ExtResource("4_3ndju")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3005099, -3.1411648e-05, 9.360669)
+is_safe = false
 
 [node name="GlassPanel6" parent="." unique_id=1523606093 instance=ExtResource("4_3ndju")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3035836, -3.1411648e-05, 9.360669)
 
 [node name="GlassPanel7" parent="." unique_id=31361001 instance=ExtResource("4_3ndju")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3005099, -3.1411648e-05, 5.3413405)
+is_safe = false
 
 [node name="GlassPanel8" parent="." unique_id=1554647126 instance=ExtResource("4_3ndju")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3035836, -3.1411648e-05, 5.3413405)

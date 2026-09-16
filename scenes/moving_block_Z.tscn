@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://bcwn8ygx5twh"]
+
+[ext_resource type="Script" uid="uid://lbvlbcecmcpb" path="res://scenes/moving_block.gd" id="1_smubt"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wp0k4"]
+albedo_color = Color(1.92523e-06, 0.556833, 0.88084, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_g7fx0"]
+material = SubResource("StandardMaterial3D_wp0k4")
+size = Vector3(2.9777756, 0.3330078, 2.9718323)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f7e5n"]
+size = Vector3(3.0015259, 0.296875, 2.989624)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_30sb6"]
+size = Vector3(2.888382, 0.39794922, 2.8400574)
+
+[node name="Moving Block2" type="AnimatableBody3D" unique_id=873480694]
+script = ExtResource("1_smubt")
+move_direction = Vector3(0, 0, -25)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=490609079 groups=["solid"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5112419, 0.23474121, -0.4844818)
+mesh = SubResource("BoxMesh_g7fx0")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=305149832]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5112152, 0.2562256, -0.4934082)
+shape = SubResource("BoxShape3D_f7e5n")
+
+[node name="Sensor" type="Area3D" parent="." unique_id=28253719]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sensor" unique_id=1998393091]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.52617645, 0.3010254, -0.47834778)
+shape = SubResource("BoxShape3D_30sb6")
