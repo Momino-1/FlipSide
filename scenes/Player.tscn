@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dht1uahu1sssy" path="res://scripts/player.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://bb3ur23ybtdfb" path="res://assets/imagewew.png" id="2_v6fml"]
-[ext_resource type="AudioStream" uid="uid://d3v0pqfpryx4o" path="res://assets/soundworks/003.mp3" id="3_3li8b"]
+[ext_resource type="AudioStream" uid="uid://b2fprqh1m6yh6" path="res://assets/soundworks/Aryx (Karsten Koch).mp3" id="3_70d11"]
 [ext_resource type="AudioStream" uid="uid://3eamolu802su" path="res://assets/soundworks/flip1.mp3" id="4_qu4a1"]
 [ext_resource type="AudioStream" uid="uid://dr7m5psfnqof5" path="res://assets/soundworks/flip2.mp3" id="5_70d11"]
 [ext_resource type="AudioStream" uid="uid://dxodsle8uwqik" path="res://assets/soundworks/hump.WAV" id="6_70d11"]
@@ -41,7 +41,7 @@ skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_p0vlq")
 
 [node name="Music" type="AudioStreamPlayer3D" parent="." unique_id=781958127]
-stream = ExtResource("3_3li8b")
+stream = ExtResource("3_70d11")
 volume_db = -12.5
 autoplay = true
 

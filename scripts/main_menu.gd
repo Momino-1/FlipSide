@@ -1,11 +1,9 @@
 extends Control
 
-## Main menu. Play loads the game level; Quit exits (desktop only).
-
 @export var play_scene_path: String = "res://scenes/Main.tscn"
 
-@onready var play_button: Button = $CenterContainer/VBoxContainer/PlayButton
-@onready var quit_button: Button = $CenterContainer/VBoxContainer/QuitButton
+@onready var play_button: Button = $VBoxContainer/PlayButton
+@onready var quit_button: Button = $VBoxContainer/QuitButton
 
 
 func _ready() -> void:

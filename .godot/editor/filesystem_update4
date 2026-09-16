@@ -11,3 +11,5 @@ res://scenes/moving_block.gd
 res://objects/moving_block.tscn
 res://scenes/moving_block_up.tscn
 res://scenes/moving_block_Z.tscn
+res://scenes/MainMenu.tscn
+res://scripts/main_menu.gd
