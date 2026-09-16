@@ -17,7 +17,8 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 config/name="FlipSide"
 run/main_scene="uid://bvhmrmjhkcttp"
 config/features=PackedStringArray("4.7", "Forward Plus")
-config/icon="uid://ch31dlvicixx6"
+config/icon="uid://cy08i20pwgjui"
+boot_splash/icon=""
 
 [display]
 

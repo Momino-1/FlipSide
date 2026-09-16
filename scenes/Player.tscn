@@ -47,10 +47,14 @@ autoplay = true
 
 [node name="FlipSound1" type="AudioStreamPlayer3D" parent="." unique_id=819037042]
 stream = ExtResource("4_qu4a1")
+volume_db = -2.0
+pitch_scale = 1.92
 
 [node name="FlipSound2" type="AudioStreamPlayer3D" parent="." unique_id=403565537]
 stream = ExtResource("5_70d11")
+volume_db = -2.0
+pitch_scale = 1.7
 
 [node name="JumpSound" type="AudioStreamPlayer3D" parent="." unique_id=1328008521]
 stream = ExtResource("6_70d11")
-volume_db = -10.833
+volume_db = -16.0
