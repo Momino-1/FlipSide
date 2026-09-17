@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b8c515ss1lv87"]
+
+[ext_resource type="Script" uid="uid://chvik6kakuvxt" path="res://scenes/musiczone.gd" id="1_iikbh"]
+[ext_resource type="AudioStream" uid="uid://dy2byp8q3d5w6" path="res://assets/soundworks/[as].mp3" id="2_dok2x"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f7e5n"]
+size = Vector3(48.736145, 27.140448, 49.461533)
+
+[node name="Musiczone" type="Area3D" unique_id=1466310006]
+script = ExtResource("1_iikbh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1469649187]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.6355276, 3.3962183, 11.795052)
+shape = SubResource("BoxShape3D_f7e5n")
+
+[node name="Music" type="AudioStreamPlayer3D" parent="." unique_id=1153809412]
+stream = ExtResource("2_dok2x")
+volume_db = -9.357

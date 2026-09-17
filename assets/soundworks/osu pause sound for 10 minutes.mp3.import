@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bxfoy47ykvuxf"
+path="res://.godot/imported/osu pause sound for 10 minutes.mp3-8e7f665fefef7d360f77da3ab8e59a10.mp3str"
+
+[deps]
+
+source_file="res://assets/soundworks/osu pause sound for 10 minutes.mp3"
+dest_files=["res://.godot/imported/osu pause sound for 10 minutes.mp3-8e7f665fefef7d360f77da3ab8e59a10.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

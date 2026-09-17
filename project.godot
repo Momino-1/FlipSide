@@ -20,6 +20,10 @@ config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="uid://cy08i20pwgjui"
 boot_splash/icon=""
 
+[autoload]
+
+CheckpointManager="*uid://bdfynqldcu7yp"
+
 [display]
 
 window/size/mode=2

@@ -5,6 +5,7 @@
 [ext_resource type="FontFile" uid="uid://dt16nk4w0bjf7" path="res://assets/fonts/LEDLIGHT.otf" id="3_826wr"]
 [ext_resource type="FontFile" uid="uid://dcrgblnh7v3q2" path="res://assets/fonts/Neuropol.otf" id="4_ucygd"]
 [ext_resource type="FontFile" uid="uid://b5nfkwtqxntx0" path="res://assets/Blue Screen Personal Use.ttf" id="5_mipys"]
+[ext_resource type="AudioStream" uid="uid://bxfoy47ykvuxf" path="res://assets/soundworks/osu pause sound for 10 minutes.mp3" id="6_826wr"]
 
 [node name="MainMenu" type="Control" unique_id=1220201078]
 layout_mode = 3
@@ -75,3 +76,7 @@ custom_minimum_size = Vector2(220, 48)
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
 text = "Quit"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=39043130]
+stream = ExtResource("6_826wr")
+autoplay = true

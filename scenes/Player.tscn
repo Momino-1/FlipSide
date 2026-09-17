@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://dht1uahu1sssy" path="res://scripts/player.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://bb3ur23ybtdfb" path="res://assets/imagewew.png" id="2_v6fml"]
-[ext_resource type="AudioStream" uid="uid://b2fprqh1m6yh6" path="res://assets/soundworks/Aryx (Karsten Koch).mp3" id="3_70d11"]
 [ext_resource type="AudioStream" uid="uid://3eamolu802su" path="res://assets/soundworks/flip1.mp3" id="4_qu4a1"]
 [ext_resource type="AudioStream" uid="uid://dr7m5psfnqof5" path="res://assets/soundworks/flip2.mp3" id="5_70d11"]
 [ext_resource type="AudioStream" uid="uid://dxodsle8uwqik" path="res://assets/soundworks/hump.WAV" id="6_70d11"]
@@ -40,11 +39,6 @@ mesh = SubResource("PlaneMesh_g7fx0")
 skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_p0vlq")
 
-[node name="Music" type="AudioStreamPlayer3D" parent="." unique_id=781958127]
-stream = ExtResource("3_70d11")
-volume_db = -12.5
-autoplay = true
-
 [node name="FlipSound1" type="AudioStreamPlayer3D" parent="." unique_id=819037042]
 stream = ExtResource("4_qu4a1")
 volume_db = -2.0
@@ -58,3 +52,11 @@ pitch_scale = 1.7
 [node name="JumpSound" type="AudioStreamPlayer3D" parent="." unique_id=1328008521]
 stream = ExtResource("6_70d11")
 volume_db = -16.0
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1419322146]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06637001, 1.6570528, -0.0561592)
+light_color = Color(1, 0.13999999, 0.13999999, 1)
+light_energy = 0.83
+light_volumetric_fog_energy = 1.56
+omni_range = 2.141
+omni_attenuation = 0.23

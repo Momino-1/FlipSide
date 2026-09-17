@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://8awj7pnlru2o"
+path="res://.godot/imported/aryx inside me.mp3-2ce1fce786be48ca0f8a38d1ff8a652f.mp3str"
+
+[deps]
+
+source_file="res://assets/soundworks/aryx inside me.mp3"
+dest_files=["res://.godot/imported/aryx inside me.mp3-2ce1fce786be48ca0f8a38d1ff8a652f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -4,3 +4,11 @@ res://scenes/tutorial_zone_space.gd
 res://scenes/tutorial_zone_text.gd
 res://scenes/Player.tscn
 res://scenes/tutorial_zone_bg.gd
+res://scripts/CheckpointManager.gd
+res://scripts/player.gd
+res://scenes/checkpoint.gd
+res://scripts/camera_rig.gd
+res://scenes/longglass.tscn
+res://assets/soundworks/checkpoint.tscn
+res://scenes/musiczone.gd
+res://scenes/MainMenu.tscn
