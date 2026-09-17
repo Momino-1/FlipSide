@@ -1,6 +1,6 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1789647367
-export_presets.cfg::TextFile::-1::1789576661::0::1::::<><><>0<>0<><>::
+::res://::1789671482
+export_presets.cfg::TextFile::-1::1789650782::0::1::::<><><>0<>0<><>::
 README.md::TextFile::-1::1789382266::0::1::::<><><>0<>0<><>::
 ::res://assets/::1789595388
 1000_F_1496127006_O1uaVgt3BE0NCWLPQOPEOpkiwRKMbVgo.jpg::CompressedTexture2D::6122659530368084389::1789466634::1789466661::1::::<><><>0<>0<>c7211d35fadcc6946888f13d0dfbd697<>res://.godot/imported/1000_F_1496127006_O1uaVgt3BE0NCWLPQOPEOpkiwRKMbVgo.jpg-327f8ed13afee91ab9443c7420cdc238.s3tc.ctex::
@@ -35,7 +35,7 @@ kenney_input_keyboard_&_mouse.otf::FontFile::8671368913928230612::1789595388::17
 kenney_input_keyboard_&_mouse.ttf::FontFile::3785003749644968627::1789595388::1789595390::1::::<><><>0<>0<>8e285ebee666b51bde6fda26530ed7a1<>res://.godot/imported/kenney_input_keyboard_&_mouse.ttf-cb3bc2f65c06ef640189b24b5e26b762.fontdata::
 kenney_input_keyboard_&_mouse_characters.txt::TextFile::-1::1789595388::0::1::::<><><>0<>0<><>::
 kenney_input_keyboard_&_mouse_map.txt::TextFile::-1::1789595388::0::1::::<><><>0<>0<><>::
-::res://assets/soundworks/::1789649423
+::res://assets/soundworks/::1789671352
 001.mp3::AudioStreamMP3::2836612276308582118::1789649423::1789649423::1::::<><><>0<>0<>d27ef63a975d27a5553abed40eca9a56<>res://.godot/imported/001.mp3-17eed6ded76daaf5ab3a1ab2e954508e.mp3str::
 003.mp3::AudioStreamMP3::9169447166310044596::1789475883::1789475920::1::::<><><>0<>0<>5ae727dc41edbcf5cd6510729db2b072<>res://.godot/imported/003.mp3-628861e0da3b933bc14e202b1d5117bd.mp3str::
 015.mp3::AudioStreamMP3::2663331373612871274::1789649423::1789649423::1::::<><><>0<>0<>6b8f5c1a5622c58d6ba60bb14e7201cf<>res://.godot/imported/015.mp3-ca866ba2910dbf61089447643db00a4b.mp3str::
@@ -46,44 +46,49 @@ Dark Ruins ナンデココニいせき.mp3::AudioStreamMP3::8725793298382228957:
 flip1.mp3::AudioStreamMP3::1973567315681577212::1789473847::1789476812::1::::<><><>0<>0<>0a93e58ba2d3c1353c2e44e436c63cae<>res://.godot/imported/flip1.mp3-1fdf27062bd55083d63c3e092dfad3a9.mp3str::
 flip2.mp3::AudioStreamMP3::8419315474688037360::1789473847::1789476815::1::::<><><>0<>0<>e12d0169c67d6d6997795a93bb6a1826<>res://.godot/imported/flip2.mp3-4c8a1fe555c92ddc123de844a4d206ec.mp3str::
 hump.WAV::AudioStreamWAV::8802721624042520810::1789477705::1789477706::1::::<><><>0<>0<>690a37bebf8b5031877bd03a78718941<>res://.godot/imported/hump.WAV-f3861f625d850c2c4b7e3ddd1fde8d64.sample::
+moneda-geometry-dash.mp3::AudioStreamMP3::6343923964081926624::1789671351::1789671352::1::::<><><>0<>0<>8135b1bba9dfdd2d4e3609ee13208189<>res://.godot/imported/moneda-geometry-dash.mp3-8a900c05dce6eb4977c5051ac5a99432.mp3str::
 osu pause sound for 10 minutes.mp3::AudioStreamMP3::4011980446806151083::1789649423::1789649423::1::::<><><>0<>0<>2bfefa1d27903f692ccec149b79241a9<>res://.godot/imported/osu pause sound for 10 minutes.mp3-8e7f665fefef7d360f77da3ab8e59a10.mp3str::
 [as].mp3::AudioStreamMP3::8899636913391513755::1789649423::1789649423::1::::<><><>0<>0<>debcfb48949919fc3af93937278e2f50<>res://.godot/imported/[as].mp3-805da12aecfb8523ae3796403edf7bbc.mp3str::
-::res://objects/::1789647367
+::res://objects/::1789664396
 0917.WAV::AudioStreamWAV::2003555259598155613::1789647353::1789647354::1::::<><><>0<>0<>98328dd0f1d3d0179837177a41469269<>res://.godot/imported/0917.WAV-25b37a29430ffb01d30f300abad6a528.sample::
 killblock.tscn::PackedScene::3507204852527067413::1789117795::0::1::::<><><>0<>0<><>::uid://i526rstcioig::::res://scripts/kill_zone.gd
 moving_block.tscn::PackedScene::1006895662786012957::1789574882::0::1::::<><><>0<>0<><>::uid://lbvlbcecmcpb::::res://scenes/moving_block.gd
+musiczone.tscn::PackedScene::4708650824040834446::1789649624::0::1::::<><><>0<>0<><>::uid://chvik6kakuvxt::::res://scenes/musiczone.gd<>uid://dy2byp8q3d5w6::::res://assets/soundworks/[as].mp3
 no_flip_zone.tscn::PackedScene::2268492652749922855::1789128142::0::1::::<><><>0<>0<><>::uid://l550sxk32xr5::::res://scripts/no_flip_zone.gd
+no_jump.tscn::PackedScene::8199392658121053114::1789664396::0::1::::<><><>0<>0<><>::uid://b66nln7te7gjq::::res://objects/brigdey/no_jump.gd
 platform.tscn::PackedScene::2751979433467772976::1789117830::0::1::::<><><>0<>0<><>::
 untitled.obj::Mesh::7023434690100456420::1789118281::1789118281::1::::<><><>0<>0<>67e082e81f7539dca790dada6e5c056d<>res://.godot/imported/untitled.obj-4671d44070239510b700cb098d49d596.mesh<*>res://.godot/imported/untitled.obj-4671d44070239510b700cb098d49d596.mesh::
-::res://objects/brigdey/::1789551769
+::res://objects/brigdey/::1789664568
 finish_zone.gd::GDScript::916018583551664942::1789126962::0::1::::<>Area3D<><>0<>0<><>::
-GlassBridge.tscn::PackedScene::1223338682433990464::1789551769::0::1::::<><><>0<>0<><>::uid://dja6jblqal1v::::res://objects/brigdey/glass_bridge.gd<>uid://i526rstcioig::::res://scripts/kill_zone.gd<>uid://bvcls8en2ysva::::res://scenes/GlassPanel.tscn<>uid://bhs2a6fk4yu4::::res://scenes/FadeOverlay.tscn<>uid://b66nln7te7gjq::::res://objects/brigdey/no_jump.gd
+GlassBridge.tscn::PackedScene::1223338682433990464::1789664568::0::1::::<><><>0<>0<><>::uid://dja6jblqal1v::::res://objects/brigdey/glass_bridge.gd<>uid://i526rstcioig::::res://scripts/kill_zone.gd<>uid://bvcls8en2ysva::::res://scenes/GlassPanel.tscn<>uid://bhs2a6fk4yu4::::res://scenes/FadeOverlay.tscn<>uid://do232f2egoih3::::res://objects/no_jump.tscn
 glass_bridge.gd::GDScript::229201765087827285::1789127174::0::1::::<>Node3D<><>0<>0<><>::
 glass_panel.gd::GDScript::2957035952821522401::1789474461::0::1::::longglass<>Node3D<><>0<>0<><>::
 no_jump.gd::GDScript::4627080244594052474::1789128605::0::1::::<>Area3D<><>0<>0<><>::
-::res://scenes/::1789648155
+::res://scenes/::1789671445
 checkpoint.gd::GDScript::6951239158486163576::1789647421::0::1::::<>Area3D<><>0<>0<><>::
 FadeOverlay.tscn::PackedScene::85780658352325005::1789113735::0::1::::<><><>0<>0<><>::uid://ygx48xkt5vrq::::res://scripts/fade_overlay.gd
 GlassPanel.tscn::PackedScene::3865216926888098722::1789398603::0::1::::<><><>0<>0<><>::uid://bien7klkmgw2d::::res://objects/brigdey/glass_panel.gd
+images.jpg::CompressedTexture2D::2346866140404611090::1789670814::1789670824::1::::<><><>0<>0<>7f0e1d3cd84b1284d6825a2a2f24b3bd<>res://.godot/imported/images.jpg-ae8029d87720ae2973583f727c0703a7.s3tc.ctex::
 longglass.gd::GDScript::1706295451407458406::1789476892::0::1::::GlassPanel<>Node3D<><>0<>0<><>::
 longglass.tscn::PackedScene::639918807488485971::1789645727::0::1::::<><><>0<>0<><>::uid://ykso36wuosos::::res://scenes/longglass.gd
-Main.tscn::PackedScene::327815592696200107::1789648155::0::1::::<><><>0<>0<><>::uid://b6sm43heqwxwj::::res://scenes/Player.tscn<>uid://bxhdy8gfujbck::::res://scripts/camera_rig.gd<>uid://i526rstcioig::::res://scripts/kill_zone.gd<>uid://bhs2a6fk4yu4::::res://scenes/FadeOverlay.tscn<>uid://c7cg7cl5swk8k::::res://objects/untitled.obj<>uid://rouhea8s3nky::::res://objects/brigdey/GlassBridge.tscn<>uid://jd8ms4vqr80v::::res://scenes/longglass.tscn<>uid://bp76fffbbs1x6::::res://objects/killblock.tscn<>uid://dop36aqiufi0k::::res://scenes/moving_block_up.tscn<>uid://ol0oow35e4bh::::res://objects/moving_block.tscn<>uid://bvcls8en2ysva::::res://scenes/GlassPanel.tscn<>uid://bcwn8ygx5twh::::res://scenes/moving_block_Z.tscn<>uid://b862h6doxlr8i::::res://scenes/tutorial_zone.gd<>uid://dy7rrsaeeihm::::res://assets/Keyboard & Mouse/Double/keyboard_arrows_left.png<>uid://cqwt3a8c6751o::::res://assets/Keyboard & Mouse/Double/keyboard_arrows_right.png<>uid://bga2fep63sonv::::res://scenes/tutorial_zone_space.gd<>uid://d06b1yi3fbwmb::::res://assets/Keyboard & Mouse/Double/keyboard_space.png<>uid://ci0r4pj1jufiu::::res://assets/Keyboard & Mouse/Double/keyboard_space_outline.png<>uid://bkw8notggphka::::res://assets/Keyboard & Mouse/Double/keyboard_f.png<>uid://bv6t1xncwy0t::::res://assets/Keyboard & Mouse/Double/keyboard_f_outline.png<>uid://bku1hj3vnxo3j::::res://scenes/tutorial_zone_text.gd<>uid://c6bh5myj155ro::::res://scenes/checkpoint.gd<>uid://qdxd8eb6fays::::res://assets/soundworks/checkpoint.tscn<>uid://dcrgblnh7v3q2::::res://assets/fonts/Neuropol.otf<>uid://bbjuat0ut8pq2::::res://scenes/tutorial_zone_bg.gd<>uid://chvik6kakuvxt::::res://scenes/musiczone.gd<>uid://8awj7pnlru2o::::res://assets/soundworks/aryx inside me.mp3
-MainMenu.tscn::PackedScene::3875596651294734385::1789576526::0::1::::<><><>0<>0<><>::uid://vhn5dh3q4647::::res://scripts/main_menu.gd<>uid://bpombkw0nld1x::::res://assets/iw0hn.jpg<>uid://dt16nk4w0bjf7::::res://assets/fonts/LEDLIGHT.otf<>uid://dcrgblnh7v3q2::::res://assets/fonts/Neuropol.otf<>uid://b5nfkwtqxntx0::::res://assets/Blue Screen Personal Use.ttf
+Main.tscn::PackedScene::327815592696200107::1789671445::0::1::::<><><>0<>0<><>::uid://b6sm43heqwxwj::::res://scenes/Player.tscn<>uid://bxhdy8gfujbck::::res://scripts/camera_rig.gd<>uid://i526rstcioig::::res://scripts/kill_zone.gd<>uid://bhs2a6fk4yu4::::res://scenes/FadeOverlay.tscn<>uid://c7cg7cl5swk8k::::res://objects/untitled.obj<>uid://rouhea8s3nky::::res://objects/brigdey/GlassBridge.tscn<>uid://jd8ms4vqr80v::::res://scenes/longglass.tscn<>uid://bp76fffbbs1x6::::res://objects/killblock.tscn<>uid://dop36aqiufi0k::::res://scenes/moving_block_up.tscn<>uid://ol0oow35e4bh::::res://objects/moving_block.tscn<>uid://bvcls8en2ysva::::res://scenes/GlassPanel.tscn<>uid://bcwn8ygx5twh::::res://scenes/moving_block_Z.tscn<>uid://b862h6doxlr8i::::res://scenes/tutorial_zone.gd<>uid://dy7rrsaeeihm::::res://assets/Keyboard & Mouse/Double/keyboard_arrows_left.png<>uid://cqwt3a8c6751o::::res://assets/Keyboard & Mouse/Double/keyboard_arrows_right.png<>uid://bga2fep63sonv::::res://scenes/tutorial_zone_space.gd<>uid://d06b1yi3fbwmb::::res://assets/Keyboard & Mouse/Double/keyboard_space.png<>uid://ci0r4pj1jufiu::::res://assets/Keyboard & Mouse/Double/keyboard_space_outline.png<>uid://bkw8notggphka::::res://assets/Keyboard & Mouse/Double/keyboard_f.png<>uid://bv6t1xncwy0t::::res://assets/Keyboard & Mouse/Double/keyboard_f_outline.png<>uid://bku1hj3vnxo3j::::res://scenes/tutorial_zone_text.gd<>uid://c6bh5myj155ro::::res://scenes/checkpoint.gd<>uid://qdxd8eb6fays::::res://assets/soundworks/checkpoint.tscn<>uid://dcrgblnh7v3q2::::res://assets/fonts/Neuropol.otf<>uid://bbjuat0ut8pq2::::res://scenes/tutorial_zone_bg.gd<>uid://chvik6kakuvxt::::res://scenes/musiczone.gd<>uid://8awj7pnlru2o::::res://assets/soundworks/aryx inside me.mp3<>uid://dwk3sneooho3v::::res://assets/soundworks/Dark Ruins ナンデココニいせき.mp3<>uid://bgocub016psuo::::res://assets/soundworks/001.mp3<>uid://do232f2egoih3::::res://objects/no_jump.tscn<>uid://cgpxekw7sjwdo::::res://scenes/shard.gd<>uid://8o3spcq3sdje::::res://scenes/images.jpg<>uid://cwnbra7uso18g::::res://assets/soundworks/moneda-geometry-dash.mp3
+MainMenu.tscn::PackedScene::3875596651294734385::1789649476::0::1::::<><><>0<>0<><>::uid://vhn5dh3q4647::::res://scripts/main_menu.gd<>uid://bpombkw0nld1x::::res://assets/iw0hn.jpg<>uid://dt16nk4w0bjf7::::res://assets/fonts/LEDLIGHT.otf<>uid://dcrgblnh7v3q2::::res://assets/fonts/Neuropol.otf<>uid://b5nfkwtqxntx0::::res://assets/Blue Screen Personal Use.ttf<>uid://bxfoy47ykvuxf::::res://assets/soundworks/osu pause sound for 10 minutes.mp3
 moving_block.gd::GDScript::775436414151313415::1789571744::0::1::::<>AnimatableBody3D<><>0<>0<><>::
 moving_block_up.tscn::PackedScene::8174626988838453348::1789574843::0::1::::<><><>0<>0<><>::uid://lbvlbcecmcpb::::res://scenes/moving_block.gd
 moving_block_Z.tscn::PackedScene::75678358958188639::1789574926::0::1::::<><><>0<>0<><>::uid://lbvlbcecmcpb::::res://scenes/moving_block.gd
+musiczone.gd::GDScript::5308020443254937909::1789650389::0::1::::<>Area3D<><>0<>0<><>::
 Player.tscn::PackedScene::4600215509653070529::1789648011::0::1::::<><><>0<>0<><>::uid://dht1uahu1sssy::::res://scripts/player.gd<>uid://bb3ur23ybtdfb::::res://assets/imagewew.png<>uid://3eamolu802su::::res://assets/soundworks/flip1.mp3<>uid://dr7m5psfnqof5::::res://assets/soundworks/flip2.mp3<>uid://dxodsle8uwqik::::res://assets/soundworks/hump.WAV
-musiczone.gd::GDScript::5308020443254937909::1789648063::0::1::::<>Area3D<><>0<>0<><>::
+shard.gd::GDScript::5226344290232106804::1789671259::0::1::::<>Area3D<><>0<>0<><>::
 tutorial_zone.gd::GDScript::4768301727011604086::1789596500::0::1::::<>Area3D<><>0<>0<><>::
 tutorial_zone_bg.gd::GDScript::2476404304472177647::1789599818::0::1::::<>Area3D<><>0<>0<><>::
 tutorial_zone_space.gd::GDScript::2809202268007620855::1789596647::0::1::::<>Area3D<><>0<>0<><>::
 tutorial_zone_text.gd::GDScript::3131188334460995105::1789599547::0::1::::<>Area3D<><>0<>0<><>::
 wall.tscn::PackedScene::3252883767547647526::1789041308::0::1::::<><><>0<>0<><>::
-::res://scripts/::1789634003
+::res://scripts/::1789667272
 camera_rig.gd::GDScript::4015441484471921274::1789633288::0::1::::<>Node3D<><>0<>0<><>::
 CheckpointManager.gd::GDScript::2608790384030909599::1789602218::0::1::::<>Area3D<><>0<>0<><>::
 fade_overlay.gd::GDScript::1698368561976011462::1789113721::0::1::::<>CanvasLayer<><>0<>0<><>::
-kill_zone.gd::GDScript::625137721711507214::1789113418::0::1::::<>Area3D<><>0<>0<><>::
+kill_zone.gd::GDScript::625137721711507214::1789667272::0::1::::<>Area3D<><>0<>0<><>::
 main_menu.gd::GDScript::1489259425078640670::1789576526::0::1::::<>Control<><>0<>0<><>::
 no_flip_zone.gd::GDScript::835875748714430036::1789128451::0::1::::<>Area3D<><>0<>0<><>::
 player.gd::GDScript::7691421503320504628::1789634003::0::1::::<>CharacterBody3D<><>0<>0<><>::

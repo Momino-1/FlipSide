@@ -5,6 +5,8 @@
 [ext_resource type="AudioStream" uid="uid://3eamolu802su" path="res://assets/soundworks/flip1.mp3" id="4_qu4a1"]
 [ext_resource type="AudioStream" uid="uid://dr7m5psfnqof5" path="res://assets/soundworks/flip2.mp3" id="5_70d11"]
 [ext_resource type="AudioStream" uid="uid://dxodsle8uwqik" path="res://assets/soundworks/hump.WAV" id="6_70d11"]
+[ext_resource type="Script" uid="uid://cbhplkpgtdl05" path="res://scenes/hud.gd" id="6_cw2d6"]
+[ext_resource type="FontFile" uid="uid://dcrgblnh7v3q2" path="res://assets/fonts/Neuropol.otf" id="7_cw2d6"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_c01mt"]
 size = Vector3(0.47906494, 0.95751953, 0.40542603)
@@ -13,6 +15,15 @@ size = Vector3(0.47906494, 0.95751953, 0.40542603)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p0vlq"]
 albedo_texture = ExtResource("2_v6fml")
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_g7fx0"]
+blend_mode = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cw2d6"]
+bg_color = Color(0, 0, 0, 0.21176471)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_khinc"]
+bg_color = Color(0.4338597, 0.89014816, 0.8352259, 1)
 
 [node name="Player" type="CharacterBody3D" unique_id=1805485522]
 script = ExtResource("1")
@@ -60,3 +71,42 @@ light_energy = 0.83
 light_volumetric_fog_energy = 1.56
 omni_range = 2.141
 omni_attenuation = 0.23
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=1037546228]
+script = ExtResource("6_cw2d6")
+total_shards = 10
+
+[node name="ShardUI" type="Control" parent="HUD" unique_id=81751351]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="HUD/ShardUI" unique_id=612601184]
+material = SubResource("CanvasItemMaterial_g7fx0")
+layout_mode = 0
+offset_left = 5.0
+offset_top = 27.000002
+offset_right = 57.758617
+offset_bottom = 67.0
+scale = Vector2(5.8000007, 0.8359836)
+
+[node name="ProgressBar" type="ProgressBar" parent="HUD/ShardUI" unique_id=927407563]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 26.999998
+offset_right = 314.0
+offset_bottom = 59.0
+theme_override_styles/background = SubResource("StyleBoxFlat_cw2d6")
+theme_override_styles/fill = SubResource("StyleBoxFlat_khinc")
+show_percentage = false
+
+[node name="ShardCounter" type="Label" parent="HUD/ShardUI" unique_id=574046892]
+layout_mode = 0
+offset_left = 6.999999
+offset_top = 26.0
+offset_right = 290.0
+offset_bottom = 69.0
+theme_override_fonts/font = ExtResource("7_cw2d6")
+theme_override_font_sizes/font_size = 28
+text = "SHARDS × 0"

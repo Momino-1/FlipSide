@@ -30,6 +30,9 @@ var spawn_rotation: Vector3
 # Keeps track of checkpoints the player has activated
 var activated_checkpoints: Array[int] = []
 
+# Shard counter
+var shards: int = 0
+
 
 var _is_flipping: bool = false
 var _is_dead: bool = false
@@ -192,6 +195,12 @@ func set_checkpoint(
 	spawn_rotation = new_rotation
 
 	print("Checkpoint ", checkpoint_number, " activated!")
+
+
+## Called by Shards when the player collects one.
+func add_shard(amount: int) -> void:
+	shards += amount
+	print("SHARDS × ", shards)
 
 
 ## Called by KillZone/kill blocks.

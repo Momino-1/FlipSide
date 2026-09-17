@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://qbl7dknqrobo"]
+
+[ext_resource type="Script" uid="uid://cgpxekw7sjwdo" path="res://scenes/shard.gd" id="1_roqsu"]
+[ext_resource type="Texture2D" uid="uid://8o3spcq3sdje" path="res://scenes/images.jpg" id="2_u4586"]
+[ext_resource type="AudioStream" uid="uid://cwnbra7uso18g" path="res://assets/soundworks/moneda-geometry-dash.mp3" id="3_ofg57"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_6hwra"]
+radius = 0.5991513
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x2i7f"]
+albedo_texture = ExtResource("2_u4586")
+emission_enabled = true
+emission = Color(0.4104646, 0.1813919, 0.49218118, 1)
+emission_energy_multiplier = 2.31
+
+[sub_resource type="PrismMesh" id="PrismMesh_7q13y"]
+material = SubResource("StandardMaterial3D_x2i7f")
+
+[node name="Shard" type="Area3D" unique_id=1741897744]
+script = ExtResource("1_roqsu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1501618309]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.66605663, 0)
+shape = SubResource("SphereShape3D_6hwra")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1606435342 groups=["solid"]]
+transform = Transform3D(0.40107277, 0.4041893, 0.09168466, -0.74941456, 0.23229328, -0.023742918, -0.14392638, -0.0831994, 0.37912095, 0, 0.8664603, 0)
+mesh = SubResource("PrismMesh_7q13y")
+
+[node name="PickupSound" type="AudioStreamPlayer2D" parent="." unique_id=1791174784]
+stream = ExtResource("3_ofg57")

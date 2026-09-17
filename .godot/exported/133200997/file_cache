@@ -5,11 +5,13 @@ res://objects/no_flip_zone.tscn::460de1b9511be38a05e95ad824e38f90::1789128142::r
 res://objects/platform.tscn::23c2c09cac154c1f018039c02510e0f3::1789117830::res://.godot/exported/133200997/export-ec4b609243bec5305e015680eaee199e-platform.scn
 res://scenes/FadeOverlay.tscn::54bf61896e3d2cf2bd258691d57f6f80::1789113735::res://.godot/exported/133200997/export-7a92f5cc41e1aa4e239f84bc4eb0b1e1-FadeOverlay.scn
 res://scenes/GlassPanel.tscn::21073e15e0bce91a52c6b7a198a6c01d::1789398603::res://.godot/exported/133200997/export-eb6fbea9add6af38d332658ffa3b8322-GlassPanel.scn
-res://scenes/longglass.tscn::1d90992d4120b539f095387feb6468c9::1789474552::res://.godot/exported/133200997/export-b11c4eab074d97e1e19fc621525a79ce-longglass.scn
-res://scenes/Main.tscn::15c0ac8aae52dc21df5f76c1552b0cd1::1789576579::res://.godot/exported/133200997/export-4a24720ee5e787dbe30abc634fa3679d-Main.scn
-res://scenes/MainMenu.tscn::e2d2cecee38494e3babc7a4da2688adb::1789576526::res://.godot/exported/133200997/export-23c8b2a48d59a0cd018bd8ad5ce7794c-MainMenu.scn
-res://scenes/Player.tscn::9f43507486d1946621c8dec151b8b0e7::1789575825::res://.godot/exported/133200997/export-e8220e74d1354b9e6b168b513689419c-Player.scn
+res://scenes/longglass.tscn::29e40f04ffc9862df477ca94e9cc456c::1789645727::res://.godot/exported/133200997/export-b11c4eab074d97e1e19fc621525a79ce-longglass.scn
+res://scenes/Main.tscn::4e6260e74cd32502ab7293dc84cb8132::1789650711::res://.godot/exported/133200997/export-4a24720ee5e787dbe30abc634fa3679d-Main.scn
+res://scenes/MainMenu.tscn::92d391dd0161a7d682a64c4496778dcc::1789649476::res://.godot/exported/133200997/export-23c8b2a48d59a0cd018bd8ad5ce7794c-MainMenu.scn
+res://scenes/Player.tscn::c9f44fab1209369478c645d1d358435f::1789648011::res://.godot/exported/133200997/export-e8220e74d1354b9e6b168b513689419c-Player.scn
 res://scenes/wall.tscn::3ea0e689710443007f588de7e771abbb::1789041308::res://.godot/exported/133200997/export-07690686bd1a72f71ae2b53bb79af276-wall.scn
 res://objects/moving_block.tscn::3e5e7bbcfe268213b2b68e45c9d7975b::1789574882::res://.godot/exported/133200997/export-1f235ec5cc7419c45d924c41e110f226-moving_block.scn
 res://scenes/moving_block_up.tscn::fe8019957d870f96d416925fe090cf61::1789574843::res://.godot/exported/133200997/export-01e1cef7ec8df5c9e4ee43d8c6ff65ab-moving_block_up.scn
 res://scenes/moving_block_Z.tscn::a911f36c829c583bfbc5d7c1c438c298::1789574926::res://.godot/exported/133200997/export-cebd1c4fb0b8419c7b202c9b7eed3fc2-moving_block_Z.scn
+res://assets/soundworks/checkpoint.tscn::de3c7f7e254c51a723b0863cdd6dd96f::1789647429::res://.godot/exported/133200997/export-b54e482cc96545967a5ea62a6c052b6c-checkpoint.scn
+res://objects/musiczone.tscn::368b15d040adcc335f03ab5b06ebafca::1789649624::res://.godot/exported/133200997/export-67c39a7f87413a74296213681fd3d096-musiczone.scn

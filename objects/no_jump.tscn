@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://do232f2egoih3"]
+
+[ext_resource type="Script" uid="uid://b66nln7te7gjq" path="res://objects/brigdey/no_jump.gd" id="1_tge1t"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_viql0"]
+size = Vector3(4.859375, 2.449463, 20.08285)
+
+[node name="NoJump" type="Area3D" unique_id=2103169998]
+script = ExtResource("1_tge1t")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2062244972]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.38085938, 0.9202881, -6.71626)
+shape = SubResource("BoxShape3D_viql0")
+debug_color = Color(0, 0.6, 0.69803923, 1)

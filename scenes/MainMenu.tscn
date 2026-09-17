@@ -79,4 +79,5 @@ text = "Quit"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=39043130]
 stream = ExtResource("6_826wr")
+volume_db = 3.195
 autoplay = true
